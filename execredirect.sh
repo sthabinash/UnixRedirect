@@ -1,0 +1,1 @@
+#!/bin/sh export LOG_FILE=log.txtexec 3>&1 1>>${LOG_FILE} 2>&1echo "This is stdout"echo "This is stderr" 1>&2echo "This is the console (fd 3)" 1>&3echo "This is both the log and the console" | tee /dev/fd/3
